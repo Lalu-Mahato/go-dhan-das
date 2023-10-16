@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	"github.com/Lalu-Mahato/go-dhan-das/config"
 	"github.com/Lalu-Mahato/go-dhan-das/routes"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
@@ -14,7 +15,7 @@ func init() {
 	if err != nil {
 		log.Fatal("Failed to load the .env file")
 	}
-	// config.DatabaseConnection()
+	config.DatabaseConnection()
 }
 
 func main() {

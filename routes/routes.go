@@ -12,4 +12,5 @@ func SetupRouter(r *gin.Engine) {
 			"message": "pong",
 		})
 	})
+	ProductRoutes(r)
 }

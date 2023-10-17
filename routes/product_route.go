@@ -16,4 +16,5 @@ func ProductRoutes(router *gin.Engine) {
 
 	api := router.Group("/api/v1")
 	api.GET("/products", productController.FindUsers)
+	api.POST("/product", productController.CreateProduct)
 }
